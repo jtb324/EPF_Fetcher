@@ -1,0 +1,4 @@
+greenlet==1.0.0
+msgpack-python==1.0.0
+request==2.25.1
+
