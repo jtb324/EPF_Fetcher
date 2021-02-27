@@ -31,13 +31,15 @@ def parser(arguments: list) -> str:
         string containing the rsid
     """
 
-    if len(arguments) < 2:
+    if len(arguments) < 4:
         print("The program was expecting at least two arguments")
-        print("Expecting arguments in the format: main.py RSID")
+        print("Expecting arguments in the format: main.py 'RSID' -o 'output_path'")
         sys.exit(1)
     else:
         rsid: str = arguments[1]
+        output_path: str = arguments[3]
         print(f"rsid: {rsid}")
+        print(f"outputing files to: {output_path}\n")
 
     return rsid
 
