@@ -6,9 +6,9 @@ The overall goal is to create a cli that can get information about the clinical 
 
 ## Setting up the environment:
 
-**\*\***Using Anaconda**\*\***:
+***Using Anaconda***:
 
-**\*\***Using Virtual Environments**\*\***:
+***Using Virtual Environments***:
 
 ## Example command to run:
 
