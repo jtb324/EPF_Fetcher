@@ -38,18 +38,26 @@ def parser(arguments: list) -> str:
     else:
         rsid: str = arguments[1]
         output_path: str = arguments[3]
+        # xml_file: str = arguments[5]
         print(f"rsid: {rsid}")
+        # print(f"xml_file: {xml_file}")
         print(f"outputing files to: {output_path}\n")
 
-    return rsid
+    # return {"rsid": rsid, "xml_file": xml_file, "output_path": output_path}
+    return {"rsid": rsid}
 
 
 def main():
     """"""
     welcome_message()
-    rsid: str = parser(sys.argv)
-    accession_id: str = modules.make_request(rsid)
-    print(accession_id)
+    argument_dict: dict = parser(sys.argv)
+    accession_id: str = modules.make_request(argument_dict["rsid"])
+
+    # Creating the xml_parser object
+
+    # parser_object: object = modules.Xml_Parser(accession_id, argument_dict["xml_file"])
+
+    # parser_object.parse_xml()
 
 
 if __name__ == "__main__":
