@@ -10,7 +10,7 @@ import modules
 
 def welcome_message():
     print("-" * 65)
-    print("'EPF Fetcher': Entrez Pathogenicity and Frequency Fetcher \n\n\
+    print("EPF Fetcher: Entrez Pathogenicity and Frequency Fetcher \n\n\
 A simple cli to probe the Entrez api for clinical significance information\n")
     print("version: 0.9 alpha\n")
 
